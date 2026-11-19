@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .users-box{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        .user-block{
+            border: 1px solid black;
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+<script>
+    let users = [
+        {
+            id: 1,
+            name: 'Leanne Graham',
+            username: 'Bret',
+            email: 'Sincere@april.biz',
+            phone: '1-770-736-8031',
+            address: {
+                city: 'Gwenborough',
+                street: 'Kulas Light',
+                suite: 'Apt. 556',
+                zipcode: '92998-3874'
+            }
+        },
+        {
+            id: 2,
+            name: 'Ervin Howell',
+            username: 'Antonette',
+            email: 'Shanna@melissa.tv',
+            phone: '010-692-6593',
+            address: {
+                city: 'Wisokyburgh',
+                street: 'Victor Plains',
+                suite: 'Suite 879',
+                zipcode: '90566-7771'
+            }
+        },
+        {
+            id: 3,
+            name: 'Clementine Bauch',
+            username: 'Samantha',
+            email: 'Nathan@yesenia.net',
+            phone: '1-463-123-4447',
+            address: {
+                city: 'McKenziehaven',
+                street: 'Douglas Extension',
+                suite: 'Suite 847',
+                zipcode: '59590-4157'
+            }
+        },
+        {
+            id: 4,
+            name: 'Patricia Lebsack',
+            username: 'Karianne',
+            email: 'Julianne.OConner@kory.org',
+            phone: '493-170-9623',
+            address: {
+                city: 'South Elvis',
+                street: 'Hoeger Mall',
+                suite: 'Apt. 692',
+                zipcode: '53919-4257'
+            }
+        },
+        {
+            id: 5,
+            name: 'Chelsey Dietrich',
+            username: 'Kamren',
+            email: 'Lucio_Hettinger@annie.ca',
+            phone: '(254)954-1289',
+            address: {
+                city: 'Roscoeview',
+                street: 'Skiles Walks',
+                suite: 'Suite 351',
+                zipcode: '33263'
+            }
+        },
+        {
+            id: 6,
+            name: 'Mrs. Dennis Schulist',
+            username: 'Leopoldo_Corkery',
+            email: 'Karley_Dach@jasper.info',
+            phone: '1-477-935-8478',
+            address: {
+                city: 'South Christy',
+                street: 'Norberto Crossing',
+                suite: 'Apt. 950',
+                zipcode: '23505-1337'
+            }
+        },
+        {
+            id: 7,
+            name: 'Kurtis Weissnat',
+            username: 'Elwyn.Skiles',
+            email: 'Telly.Hoeger@billy.biz',
+            phone: '210.067.6132',
+            address: {
+                city: 'Howemouth',
+                street: 'Rex Trail',
+                suite: 'Suite 280',
+                zipcode: '58804-1099'
+            }
+        },
+        {
+            id: 8,
+            name: 'Nicholas Runolfsdottir V',
+            username: 'Maxime_Nienow',
+            email: 'Sherwood@rosamond.me',
+            phone: '586.493.6943',
+            address: {
+                city: 'Aliyaview',
+                street: 'Ellsworth Summit',
+                suite: 'Suite 729',
+                zipcode: '45169'
+            }
+        },
+        {
+            id: 9,
+            name: 'Glenna Reichert',
+            username: 'Delphine',
+            email: 'Chanelle.Doyle@hahn.com',
+            phone: '(775)976-6794',
+            address: {
+                city: 'Bartholomebury',
+                street: 'Dayna Park',
+                suite: 'Suite 449',
+                zipcode: '76495-3109'
+            }
+        },
+        {
+            id: 10,
+            name: 'Clementina DuBuque',
+            username: 'Moriah.Stanton',
+            email: 'Rey.Padberg@karina.biz',
+            phone: '024-648-3804',
+            address: {
+                city: 'Lebsackbury',
+                street: 'Kattie Turnpike',
+                suite: 'Suite 198',
+                zipcode: '31428-2261'
+            }
+        }
+    ];
+    document.write(`<div class="users-box">`);
+    for (const user of users) {
+        document.write(`
+    <div class="user-block">
+        <h2>${user.id} - ${user.name} - ${user.username}</h2>
+        <h3>${user.email} - ${user.phone}</h3>
+        <div class="address-block">
+            <p>ADDRESS.CITY - ${user.address.city}</p>
+            <p>Street - ${user.address.street}</p>
+            <p>Suite - ${user.address.suite}</p>
+            <p>Zip code - ${user.address.zipcode}</p>
+        </div>
+    </div>
+        `)
+    }
+    document.write(`</div>`);
+</script>
+</body>
+</html>
